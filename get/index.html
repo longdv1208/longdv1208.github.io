@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tải HomeWay – Đi chung xe, tìm người giúp việc gần nhà</title>
+<meta name="description" content="HomeWay miễn phí: tìm chuyến đi chung tiện đường, đặt vé nhà xe, tìm việc và người giúp việc gần nhà. Tải trên App Store và Google Play.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://longdv1208.github.io/get/">
+<meta property="og:title" content="Tải HomeWay – Đi chung xe, tìm người giúp việc gần nhà">
+<meta property="og:description" content="Ứng dụng miễn phí kết nối những người ở gần nhau: đi chung xe, đặt vé nhà xe, việc nhà theo giờ.">
+<meta property="og:image" content="https://longdv1208.github.io/get/og.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="icon.png">
+<script>
+  /*
+   * Link trong ảnh/chữ chia sẻ của app trỏ về đây. Điện thoại tự sang đúng
+   * cửa hàng; máy tính (hoặc trình duyệt chặn chuyển trang) thấy hai nút.
+   * Thêm ?stay vào link để xem trang mà không bị chuyển.
+   */
+  (function () {
+    var IOS = 'https://apps.apple.com/app/homeway/id6818692681';
+    var ANDROID = 'https://play.google.com/store/apps/details?id=com.ride.waymate';
+    if (/[?&]stay\b/.test(location.search)) return;
+    var ua = navigator.userAgent || '';
+    var isIOS = /iPhone|iPad|iPod/i.test(ua) ||
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    if (isIOS) location.replace(IOS);
+    else if (/Android/i.test(ua)) location.replace(ANDROID);
+  })();
+</script>
+<style>
+  :root { --bg:#f3f6fb; --fg:#0f172a; --muted:#64748b; --card:#ffffff; --border:#dbe3ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0b1230; --fg:#e5e7eb; --muted:#9ca3af; --card:#141d42; --border:#24305e; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+    background:var(--bg); color:var(--fg);
+    font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; padding:24px 16px; }
+  main { width:100%; max-width:420px; background:var(--card); border:1px solid var(--border);
+    border-radius:24px; padding:32px 24px; text-align:center; }
+  img.logo { width:88px; height:88px; border-radius:22px; }
+  h1 { font-size:24px; margin:16px 0 4px; }
+  p { color:var(--muted); margin:0 0 24px; }
+  a.btn { display:block; padding:14px 16px; border-radius:14px; text-decoration:none; font-weight:600;
+    margin-top:12px; color:#fff; background:linear-gradient(135deg,#5B9BFF,#2463EB 55%,#1230A6); }
+  a.btn.alt { background:#0b1b4d; }
+  ul { text-align:left; color:var(--muted); font-size:15px; padding-left:20px; margin:24px 0 0; }
+  footer { margin-top:24px; font-size:13px; }
+  footer a { color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="icon.png" alt="HomeWay">
+  <h1>HomeWay</h1>
+  <p>Đi chung xe · Tìm người giúp việc gần nhà<br>Miễn phí</p>
+  <a class="btn" href="https://apps.apple.com/app/homeway/id6818692681">Tải trên App Store (iPhone)</a>
+  <a class="btn alt" href="https://play.google.com/store/apps/details?id=com.ride.waymate">Tải trên Google Play (Android)</a>
+  <ul>
+    <li>Tìm chuyến tiện đường, đặt ghế và hẹn điểm đón</li>
+    <li>Tài xế đăng chuyến, nhận khách cùng đường</li>
+    <li>Đặt vé nhà xe theo tuyến</li>
+    <li>Tìm việc nhà theo giờ hoặc người giúp việc gần bạn</li>
+  </ul>
+  <footer><a href="/introduce.html">Giới thiệu tính năng</a></footer>
+</main>
+</body>
+</html>
